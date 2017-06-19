@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/img">
+
+
+    <Button
+        android:id="@+id/btnMy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:text="My informations"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGraph"
+        android:text="Vıew Graph"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnCS"
+        android:layout_alignStart="@+id/btnCS"
+        android:layout_alignEnd="@+id/btnCS" />
+
+    <Button
+        android:id="@+id/btnOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Notifications"
+        android:visibility="invisible"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnMy"
+        android:layout_alignStart="@+id/btnMy"
+        android:layout_alignEnd="@+id/btnMy" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_below="@+id/btnGraph"
+        android:layout_alignEnd="@+id/btnCS"
+        android:layout_marginTop="69dp"
+        android:layout_alignStart="@+id/btnMy" />
+
+
+
+    <Button
+        android:id="@+id/btnCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Notifications"
+        android:layout_marginTop="23dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnOS"
+        android:layout_alignStart="@+id/btnOS"
+        android:layout_alignEnd="@+id/btnOS" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/detector"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnMy"
+        android:layout_above="@+id/btnCS"
+        android:layout_alignEnd="@+id/btnMy" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCS"
+        android:layout_centerHorizontal="true"
+        android:text="Detector App"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
